@@ -32,39 +32,77 @@
         
         <h3>Menús de la Barra Superior (Topbar)</h3>
         <img src="https://docs.blender.org/manual/en/latest/_images/interface_window-system_topbar_menus.png" class="img-fluid rounded mb-3 shadow" alt="Menús Topbar">
-        
-        <p>La barra superior contiene opciones esenciales para la gestión del proyecto. Sus menús principales son:</p>
+        <p>La barra superior contiene opciones esenciales para la gestión del proyecto (Menú Blender, File, Edit, Render y Window).</p>
+
+        <h3>Regiones y Barras de Herramientas</h3>
+        <img src="https://docs.blender.org/manual/en/latest/_images/interface_window-system_regions_3d-view.png" class="img-fluid rounded mb-3 shadow" alt="Regiones del Visor 3D">
+        <p>Cada editor en Blender se divide en <strong>Regiones</strong>. Al menos una región siempre es visible (la Región Principal). Las barras de herramientas más importantes para la personalización y acceso rápido son:</p>
         <ul>
-            <li><strong>Menú Blender:</strong> Permite abrir la pantalla de inicio (Splash Screen), ver información sobre la versión (About Blender) y restaurar la configuración de fábrica (Load Factory Settings).</li>
-            <li><strong>Menú File (Archivo):</strong> Opciones para gestionar archivos, incluyendo crear nuevos (Ctrl-N), abrir (Ctrl-O), guardar (Ctrl-S), importar/exportar, y gestionar datos externos (como empacar o desempacar texturas y recursos dentro del archivo .blend).</li>
-            <li><strong>Menú Edit (Edición):</strong> Contiene el historial para deshacer/rehacer, herramientas para renombrar elementos en lote (Batch Rename), buscar menús por nombre (Menu Search) y abrir la ventana de Preferencias (Ctrl-Comma).</li>
-            <li><strong>Menú Render:</strong> Herramientas para procesar la imagen (F12) o la animación (Ctrl-F12) de la escena activa, procesar audio y ver los resultados del render.</li>
-            <li><strong>Menú Window (Ventana):</strong> Permite crear nuevas ventanas copiando la actual, cambiar a pantalla completa, navegar entre espacios de trabajo, mostrar/ocultar la barra de estado y guardar capturas de pantalla de la interfaz.</li>
+            <li><strong>Toolbar (Barra de herramientas):</strong> Ubicada en el lado izquierdo del área del editor, contiene un conjunto de herramientas interactivas. Puedes alternar su visibilidad presionando la tecla <code>T</code>.</li>
+            <li><strong>Sidebar (Panel lateral):</strong> Ubicada en el lado derecho, contiene paneles con configuraciones de los objetos y del propio editor. Puedes alternar su visibilidad presionando la tecla <code>N</code>.</li>
+            <li><strong>Header (Encabezado):</strong> Una pequeña franja horizontal (arriba o abajo) que contiene menús y herramientas de uso común que cambian según el editor.</li>
+        </ul>
+
+        <div class="d-flex gap-3 mb-4">
+            <img src="https://docs.blender.org/manual/en/latest/_images/interface_window-system_regions_sidebar-hide.png" class="img-fluid rounded shadow" alt="Ocultar Sidebar" style="max-height: 150px;">
+            <img src="https://docs.blender.org/manual/en/latest/_images/interface_window-system_regions_sidebar-show.png" class="img-fluid rounded shadow" alt="Mostrar Sidebar" style="max-height: 150px;">
+        </div>
+        <p class="text-muted small">Para ocultar una región manualmente, arrastra su borde hasta reducirla a cero. Quedará un pequeño icono de flecha al que puedes darle clic para volver a mostrarla.</p>
+
+        <hr class="my-4">
+
+        <h2>2. Layouts y Paneles de Interfaz (Áreas)</h2>
+        <img src="https://docs.blender.org/manual/en/latest/_images/interface_window-system_areas_borders.png" class="img-fluid rounded mb-3 shadow" alt="Límites de Áreas">
+        
+        <p>La ventana de Blender está dividida en rectángulos llamados <strong>Áreas</strong>. Blender permite manipular de forma interactiva el tamaño y la ubicación de las áreas para crear layouts personalizados:</p>
+        
+        <ul>
+            <li><strong>Dividir (Splitting):</strong> Coloca el cursor en la esquina de un área hasta que cambie a una cruz (+). Arrastra hacia la izquierda o derecha para dividir verticalmente, o hacia arriba y abajo para dividir horizontalmente.</li>
+            <li><strong>Unir (Joining):</strong> Arrastrando desde la esquina de un área hacia el espacio de una segunda área, unirá ambas. El área que será absorbida se mostrará oscurecida.</li>
+        </ul>
+        
+        <div class="d-flex gap-3 mb-4">
+            <img src="https://docs.blender.org/manual/en/latest/_images/interface_window-system_areas_split.png" class="img-fluid rounded shadow" alt="Dividir Áreas" style="max-width: 48%;">
+            <img src="https://docs.blender.org/manual/en/latest/_images/interface_window-system_areas_join.png" class="img-fluid rounded shadow" alt="Unir Áreas" style="max-width: 48%;">
+        </div>
+
+        <hr class="my-4">
+
+        <h2>3. Shelves Personalizados (Asset Shelf)</h2>
+        <img src="https://docs.blender.org/manual/en/latest/_images/interface_window-system_regions_asset-shelf.png" class="img-fluid rounded mb-3 shadow" alt="Asset Shelf">
+        
+        <p>Blender utiliza el <strong>Asset Shelf</strong> (Estante de Activos) de manera similar a los "shelves" o estantes convencionales de otras aplicaciones. Esta región permite organizar y acceder rápidamente a elementos como materiales o poses de catálogos.</p>
+        <ul>
+            <li><strong>Búsqueda:</strong> Pasa el ratón sobre el Asset Shelf, presiona <code>Ctrl-F</code> y escribe para filtrar los activos.</li>
+            <li><strong>Pestañas (Tabs):</strong> Los catálogos se pueden mostrar como pestañas individuales, haciendo que sea muy fácil filtrar un conjunto específico de herramientas o activos.</li>
+            <li><strong>Opciones de visualización:</strong> Puedes cambiar el tamaño de los iconos, alternar la visibilidad de los nombres y arrastrar el borde superior del estante para permitir múltiples filas de herramientas.</li>
         </ul>
 
         <hr class="my-4">
 
-        <h2>2. Configuración de Atajos de Teclado</h2>
+        <h2>4. Uso de Scripts y Herramientas Personalizadas</h2>
+        <img src="imagen.png" class="img-fluid rounded mb-3 shadow" alt="Menú de Add-ons en Blender">
+        <p>En Blender, la integración de scripts y herramientas de terceros se maneja a través del sistema de <strong>Add-ons</strong> (Complementos). Existen complementos oficiales altamente recomendados para acelerar el flujo de trabajo que vienen preinstalados pero desactivados, tales como <em>Node Wrangler</em> (para agilizar el trabajo con materiales y nodos) o <em>Rigify</em> (para automatizar la creación de esqueletos en animación).</p>
+
+        <hr class="my-4">
+
+        <h2>5. Configuración de Atajos de Teclado</h2>
         <p>Blender hace un uso intensivo de los atajos de teclado para acelerar el trabajo. Estos se pueden personalizar detalladamente en el Editor de Keymap dentro de las Preferencias.</p>
         
         <hr class="my-4">
 
-        <h2>3. Configuración del Entorno de Trabajo</h2>
+        <h2>6. Configuración del Entorno de Trabajo</h2>
         
         <h3>Espacios de trabajo (Workspaces)</h3>
         <img src="https://docs.blender.org/manual/en/latest/_images/interface_window-system_topbar_workspaces.png" class="img-fluid rounded mb-3 shadow" alt="Workspaces">
         <p>Este conjunto de pestañas se utiliza para cambiar rápidamente entre Workspaces, los cuales son esencialmente diseños de ventanas y paneles predefinidos para tareas específicas (como modelado, animación o renderizado).</p>
 
-        <h3>Escenas y Capas (Scenes & Layers)</h3>
-        <img src="https://docs.blender.org/manual/en/latest/_images/interface_window-system_topbar_scenes-layers.png" class="img-fluid rounded mb-3 shadow" alt="Scenes and Layers">
-        <p>Estos menús de bloques de datos se utilizan para seleccionar y gestionar la Escena (Scene) actual y la Capa de visualización (View Layer) activa dentro del proyecto.</p>
-
         <hr class="my-4">
 
-        <h2>4. Configuración de Preferencias de Usuario</h2>
+        <h2>7. Configuración de Preferencias de Usuario</h2>
         
         <h3>Colores del tema</h3>
-        <p>Blender permite cambiar la mayoría de los colores de su interfaz para adaptarse a las necesidades del usuario. Crear un nuevo tema o seleccionar/alterar uno preexistente se puede hacer abriendo las Preferencias y haciendo clic en la pestaña Temas (Themes).</p>
+        <p>Blender permite cambiar la mayoría de los colores de su interfaz. Crear un nuevo tema o seleccionar uno preexistente se puede hacer abriendo las Preferencias y haciendo clic en la pestaña Temas (Themes).</p>
 
         <h3>Accesibilidad</h3>
         <p>El software cuenta con varias opciones para la personalización de la visibilidad, incluyendo la escala de resolución y la capacidad de cargar fuentes personalizadas. Estas configuraciones se ajustan en la pestaña de Interfaz de las Preferencias.</p>
@@ -74,3 +112,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
+
+
+
