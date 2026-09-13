@@ -3,41 +3,72 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Configuración de Interfaz en Blender</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   </head>
   <body>
-
-    <div class="container mt-4">
-        <h1>Hello, world!</h1>
-        <h1>Introducción al sistema de ventanas</h1>
+    <div class="container mt-5 mb-5">
+        
+        <h1 class="text-center mb-4">Introducción al sistema de ventanas</h1>
         <p>Después de iniciar Blender y cerrar el Splash screen (pantalla de inicio), la ventana de Blender debe ser similar a la imagen de abajo.</p>
         
-   
-        <img src="https://docs.blender.org/manual/en/latest/_images/interface_window-system_introduction_default-startup.webp" class="img-fluid" alt="Startup de Blender">
+        <img src="https://docs.blender.org/manual/en/latest/_images/interface_window-system_introduction_default-startup.webp" class="img-fluid rounded mb-4 shadow" alt="Startup de Blender">
 
         <p>La interfaz de Blender está separada en tres partes principales:</p>
-        <p>La barra superior (Topbar) en la parte más alta, consiste en el menú principal, que se usa para guardar, importar y exportar archivos, configurar ajustes y renderizar, entre otras funciones.</p> 
-        <p>Las Áreas (Areas) en el medio, que son el espacio de trabajo principal.</p>
-        <p>La Barra de estado (Status Bar) en la parte inferior, que muestra sugerencias de atajos y estadísticas relevantes.</p>
+        <ul>
+            <li><strong>La barra superior (Topbar):</strong> En la parte más alta, consiste en el menú principal, que se usa para guardar, importar y exportar archivos, configurar ajustes y renderizar, entre otras funciones.</li>
+            <li><strong>Las Áreas (Areas):</strong> En el medio, que son el espacio de trabajo principal.</li>
+            <li><strong>La Barra de estado (Status Bar):</strong> En la parte inferior, que muestra sugerencias de atajos y estadísticas relevantes.</li>
+        </ul>
 
-    
-        <img src="https://docs.blender.org/manual/en/latest/_images/interface_window-system_introduction_default-screen.png" class="img-fluid" alt="Layout de la pantalla">
+        <img src="https://docs.blender.org/manual/en/latest/_images/interface_window-system_introduction_default-screen.png" class="img-fluid rounded mb-2 shadow" alt="Layout de la pantalla">
+        <p class="text-muted small mb-5">Layout predeterminado de la pantalla de Blender. Barra superior (azul), Áreas (verde) y Barra de estado (rojo).</p>
         
-        <p>Layout predeterminado de la pantalla de Blender. Barra superior (azul), Áreas (verde) y Barra de estado (rojo).</p>
+        <hr class="my-5">
+
+        <h1 class="mb-4">Personalización y Configuración</h1>
+
+        <h2>1. Personalización del Menú y Barras de Herramientas</h2>
         
-        <h2>Personalización</h2>
-        <h1>Atajos de teclado</h1>
-
-        <p>Blender hace un uso intensivo de los atajos de teclado para acelerar el trabajo. Estos se pueden personalizar en el Editor de Keymap.</p>
+        <h3>Menús de la Barra Superior (Topbar)</h3>
+        <img src="https://docs.blender.org/manual/en/latest/_images/interface_window-system_topbar_menus.png" class="img-fluid rounded mb-3 shadow" alt="Menús Topbar">
         
-        <h2>Colores del tema</h2>
+        <p>La barra superior contiene opciones esenciales para la gestión del proyecto. Sus menús principales son:</p>
+        <ul>
+            <li><strong>Menú Blender:</strong> Permite abrir la pantalla de inicio (Splash Screen), ver información sobre la versión (About Blender) y restaurar la configuración de fábrica (Load Factory Settings).</li>
+            <li><strong>Menú File (Archivo):</strong> Opciones para gestionar archivos, incluyendo crear nuevos (Ctrl-N), abrir (Ctrl-O), guardar (Ctrl-S), importar/exportar, y gestionar datos externos (como empacar o desempacar texturas y recursos dentro del archivo .blend).</li>
+            <li><strong>Menú Edit (Edición):</strong> Contiene el historial para deshacer/rehacer, herramientas para renombrar elementos en lote (Batch Rename), buscar menús por nombre (Menu Search) y abrir la ventana de Preferencias (Ctrl-Comma).</li>
+            <li><strong>Menú Render:</strong> Herramientas para procesar la imagen (F12) o la animación (Ctrl-F12) de la escena activa, procesar audio y ver los resultados del render.</li>
+            <li><strong>Menú Window (Ventana):</strong> Permite crear nuevas ventanas copiando la actual, cambiar a pantalla completa, navegar entre espacios de trabajo, mostrar/ocultar la barra de estado y guardar capturas de pantalla de la interfaz.</li>
+        </ul>
 
-        <p>Blender permite cambiar la mayoría de los colores de su interfaz para adaptarse a las necesidades del usuario. Si descubres que los colores que ves en la pantalla no coinciden con los del Manual, podría ser que tu tema predeterminado haya sido alterado. Crear un nuevo tema o seleccionar/alterar uno preexistente se puede hacer abriendo las Preferencias y haciendo clic en la pestaña Temas (Themes).</p>
+        <hr class="my-4">
 
-        <h2>Accesibilidad</h2>
+        <h2>2. Configuración de Atajos de Teclado</h2>
+        <p>Blender hace un uso intensivo de los atajos de teclado para acelerar el trabajo. Estos se pueden personalizar detalladamente en el Editor de Keymap dentro de las Preferencias.</p>
+        
+        <hr class="my-4">
 
-        <p>Blender tiene varias opciones para la personalización de la visibilidad, incluyendo la escala de resolución y la capacidad de cargar fuentes personalizadas. Estas configuraciones se pueden ajustar en las Preferencias de Interfaz.</p>
+        <h2>3. Configuración del Entorno de Trabajo</h2>
+        
+        <h3>Espacios de trabajo (Workspaces)</h3>
+        <img src="https://docs.blender.org/manual/en/latest/_images/interface_window-system_topbar_workspaces.png" class="img-fluid rounded mb-3 shadow" alt="Workspaces">
+        <p>Este conjunto de pestañas se utiliza para cambiar rápidamente entre Workspaces, los cuales son esencialmente diseños de ventanas y paneles predefinidos para tareas específicas (como modelado, animación o renderizado).</p>
+
+        <h3>Escenas y Capas (Scenes & Layers)</h3>
+        <img src="https://docs.blender.org/manual/en/latest/_images/interface_window-system_topbar_scenes-layers.png" class="img-fluid rounded mb-3 shadow" alt="Scenes and Layers">
+        <p>Estos menús de bloques de datos se utilizan para seleccionar y gestionar la Escena (Scene) actual y la Capa de visualización (View Layer) activa dentro del proyecto.</p>
+
+        <hr class="my-4">
+
+        <h2>4. Configuración de Preferencias de Usuario</h2>
+        
+        <h3>Colores del tema</h3>
+        <p>Blender permite cambiar la mayoría de los colores de su interfaz para adaptarse a las necesidades del usuario. Crear un nuevo tema o seleccionar/alterar uno preexistente se puede hacer abriendo las Preferencias y haciendo clic en la pestaña Temas (Themes).</p>
+
+        <h3>Accesibilidad</h3>
+        <p>El software cuenta con varias opciones para la personalización de la visibilidad, incluyendo la escala de resolución y la capacidad de cargar fuentes personalizadas. Estas configuraciones se ajustan en la pestaña de Interfaz de las Preferencias.</p>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
