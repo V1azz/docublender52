@@ -36,29 +36,27 @@
 
         <h3>Regiones y Barras de Herramientas</h3>
         <img src="https://docs.blender.org/manual/en/latest/_images/interface_window-system_regions_3d-view.png" class="img-fluid rounded mb-3 shadow" alt="Regiones del Visor 3D">
-        <p>Cada editor en Blender se divide en <strong>Regiones</strong>. Al menos una región siempre es visible (la Región Principal). Las barras de herramientas más importantes para la personalización y acceso rápido son:</p>
+        <p>Cada editor en Blender se divide en <strong>Regiones</strong>. Las barras de herramientas más importantes para la personalización y acceso rápido son:</p>
         <ul>
-            <li><strong>Toolbar (Barra de herramientas):</strong> Ubicada en el lado izquierdo del área del editor, contiene un conjunto de herramientas interactivas. Puedes alternar su visibilidad presionando la tecla <code>T</code>.</li>
-            <li><strong>Sidebar (Panel lateral):</strong> Ubicada en el lado derecho, contiene paneles con configuraciones de los objetos y del propio editor. Puedes alternar su visibilidad presionando la tecla <code>N</code>.</li>
-            <li><strong>Header (Encabezado):</strong> Una pequeña franja horizontal (arriba o abajo) que contiene menús y herramientas de uso común que cambian según el editor.</li>
+            <li><strong>Toolbar (Barra de herramientas):</strong> Ubicada en el lado izquierdo del área del editor, contiene herramientas interactivas. Puedes añadir o eliminar su visibilidad presionando <code>T</code>.</li>
+            <li><strong>Sidebar (Panel lateral):</strong> Ubicada en el lado derecho, contiene paneles con configuraciones de los objetos. Puedes alternar su visibilidad con <code>N</code>.</li>
         </ul>
 
         <div class="d-flex gap-3 mb-4">
             <img src="https://docs.blender.org/manual/en/latest/_images/interface_window-system_regions_sidebar-hide.png" class="img-fluid rounded shadow" alt="Ocultar Sidebar" style="max-height: 150px;">
             <img src="https://docs.blender.org/manual/en/latest/_images/interface_window-system_regions_sidebar-show.png" class="img-fluid rounded shadow" alt="Mostrar Sidebar" style="max-height: 150px;">
         </div>
-        <p class="text-muted small">Para ocultar una región manualmente, arrastra su borde hasta reducirla a cero. Quedará un pequeño icono de flecha al que puedes darle clic para volver a mostrarla.</p>
 
         <hr class="my-4">
 
         <h2>2. Layouts y Paneles de Interfaz (Áreas)</h2>
         <img src="https://docs.blender.org/manual/en/latest/_images/interface_window-system_areas_borders.png" class="img-fluid rounded mb-3 shadow" alt="Límites de Áreas">
         
-        <p>La ventana de Blender está dividida en rectángulos llamados <strong>Áreas</strong>. Blender permite manipular de forma interactiva el tamaño y la ubicación de las áreas para crear layouts personalizados:</p>
+        <p>La ventana de Blender está dividida en rectángulos llamados <strong>Áreas</strong>. Blender permite manipular de forma interactiva el tamaño y la ubicación de las áreas para crear layouts personalizados que maximicen el espacio y la eficiencia:</p>
         
         <ul>
-            <li><strong>Dividir (Splitting):</strong> Coloca el cursor en la esquina de un área hasta que cambie a una cruz (+). Arrastra hacia la izquierda o derecha para dividir verticalmente, o hacia arriba y abajo para dividir horizontalmente.</li>
-            <li><strong>Unir (Joining):</strong> Arrastrando desde la esquina de un área hacia el espacio de una segunda área, unirá ambas. El área que será absorbida se mostrará oscurecida.</li>
+            <li><strong>Dividir (Splitting) paneles:</strong> Coloca el cursor en la esquina de un área hasta que cambie a una cruz (+). Arrastra hacia la izquierda/derecha o arriba/abajo para abrir nuevas ventanas de trabajo.</li>
+            <li><strong>Unir (Joining) paneles:</strong> Arrastrando desde la esquina de un área hacia el espacio de una segunda área, cerrará y unirá ambas.</li>
         </ul>
         
         <div class="d-flex gap-3 mb-4">
@@ -71,23 +69,36 @@
         <h2>3. Shelves Personalizados (Asset Shelf)</h2>
         <img src="https://docs.blender.org/manual/en/latest/_images/interface_window-system_regions_asset-shelf.png" class="img-fluid rounded mb-3 shadow" alt="Asset Shelf">
         
-        <p>Blender utiliza el <strong>Asset Shelf</strong> (Estante de Activos) de manera similar a los "shelves" o estantes convencionales de otras aplicaciones. Esta región permite organizar y acceder rápidamente a elementos como materiales o poses de catálogos.</p>
+        <p>Blender utiliza el <strong>Asset Shelf</strong> de manera similar a los "shelves" de otras aplicaciones. Esta región permite organizar íconos, comandos y crear accesos rápidos a elementos específicos.</p>
         <ul>
-            <li><strong>Búsqueda:</strong> Pasa el ratón sobre el Asset Shelf, presiona <code>Ctrl-F</code> y escribe para filtrar los activos.</li>
-            <li><strong>Pestañas (Tabs):</strong> Los catálogos se pueden mostrar como pestañas individuales, haciendo que sea muy fácil filtrar un conjunto específico de herramientas o activos.</li>
-            <li><strong>Opciones de visualización:</strong> Puedes cambiar el tamaño de los iconos, alternar la visibilidad de los nombres y arrastrar el borde superior del estante para permitir múltiples filas de herramientas.</li>
+            <li><strong>Organización y Pestañas:</strong> Los catálogos se pueden mostrar como pestañas individuales, haciendo que sea muy fácil filtrar un conjunto específico de herramientas o activos para un acceso rápido.</li>
         </ul>
 
         <hr class="my-4">
 
         <h2>4. Uso de Scripts y Herramientas Personalizadas</h2>
         <img src="imagen.png" class="img-fluid rounded mb-3 shadow" alt="Menú de Add-ons en Blender">
-        <p>En Blender, la integración de scripts y herramientas de terceros se maneja a través del sistema de <strong>Add-ons</strong> (Complementos). Existen complementos oficiales altamente recomendados para acelerar el flujo de trabajo que vienen preinstalados pero desactivados, tales como <em>Node Wrangler</em> (para agilizar el trabajo con materiales y nodos) o <em>Rigify</em> (para automatizar la creación de esqueletos en animación).</p>
+        <p>En Blender, la integración de scripts y herramientas de terceros se maneja a través del sistema de <strong>Add-ons</strong>. Un complemento es básicamente un módulo de Python con requisitos adicionales (como el diccionario <code>bl_info</code> y las funciones de registro <code>register()</code>/<code>unregister()</code>) para que Blender pueda mostrarlo e integrarlo en la interfaz.</p>
+        <p><strong>Instalación y ejecución:</strong> Para instalar scripts personalizados o descargados, el archivo debe guardarse con extensión <code>.py</code> y posteriormente instalarse desde <em>Preferences ‣ Add-ons ‣ Install…</em>. Una vez activo, el operador se puede buscar o integrar en menús personalizados.</p>
+        
+        <div class="row g-3 mb-4">
+            <div class="col-md-6">
+                <img src="https://docs.blender.org/manual/en/latest/_images/advanced_scripting_addon-tutorial_operator-search-menu.png" class="img-fluid rounded shadow" alt="Operator Search Menu">
+            </div>
+            <div class="col-md-6">
+                <img src="https://docs.blender.org/manual/en/latest/_images/advanced_scripting_addon-tutorial_op-prop.png" class="img-fluid rounded shadow" alt="Operator Property">
+            </div>
+        </div>
 
         <hr class="my-4">
 
         <h2>5. Configuración de Atajos de Teclado</h2>
-        <p>Blender hace un uso intensivo de los atajos de teclado para acelerar el trabajo. Estos se pueden personalizar detalladamente en el Editor de Keymap dentro de las Preferencias.</p>
+        <p>Blender hace un uso intensivo de los atajos de teclado para acelerar el trabajo. Estos se pueden personalizar detalladamente en el <strong>Keymap Editor</strong> dentro de las Preferencias.</p>
+        <img src="https://docs.blender.org/manual/en/latest/_images/editors_preferences_keymap_keymap-editor.png" class="img-fluid rounded mb-3 shadow" alt="Keymap Editor">
+        <ul>
+            <li><strong>Asignación:</strong> Puedes buscar herramientas frecuentes mediante filtros y asignarles atajos personalizados.</li>
+            <li><strong>Importar/Exportar:</strong> La opción <em>Import</em> abre un explorador de archivos para seleccionar un archivo <code>.py</code> con un preset personalizado, mientras que <em>Export</em> guarda la configuración actual como un preset para compartirla.</li>
+        </ul>
         
         <hr class="my-4">
 
@@ -95,23 +106,42 @@
         
         <h3>Espacios de trabajo (Workspaces)</h3>
         <img src="https://docs.blender.org/manual/en/latest/_images/interface_window-system_topbar_workspaces.png" class="img-fluid rounded mb-3 shadow" alt="Workspaces">
-        <p>Este conjunto de pestañas se utiliza para cambiar rápidamente entre Workspaces, los cuales son esencialmente diseños de ventanas y paneles predefinidos para tareas específicas (como modelado, animación o renderizado).</p>
+        <p>Este conjunto de pestañas se utiliza para crear y guardar <strong>Workspaces</strong>, que son diseños predefinidos de ventanas orientados a tareas particulares (modelado, animación, etc.).</p>
+
+        <h3>Guardado automático y recuperación</h3>
+        <p>Blender proporciona opciones integradas para recuperar archivos y evitar la pérdida de datos desde el menú <strong>File ‣ Recover</strong>:</p>
+        <ul>
+            <li><strong>Last Session:</strong> Carga el archivo <code>quit.blend</code> guardado automáticamente antes de salir.</li>
+            <li><strong>Auto Save:</strong> Permite recuperar la versión más reciente guardada de forma automática en caso de un fallo del sistema.</li>
+        </ul>
+        
+        <div class="d-flex gap-3 mb-4">
+            <img src="https://docs.blender.org/manual/en/latest/_images/files_blend_open-save_file-browser-open.png" class="img-fluid rounded shadow" alt="Explorador de archivos - Abrir" style="max-width: 48%;">
+            <img src="https://docs.blender.org/manual/en/latest/_images/files_blend_open-save_file-browser-save.png" class="img-fluid rounded shadow" alt="Explorador de archivos - Guardar" style="max-width: 48%;">
+        </div>
 
         <hr class="my-4">
 
         <h2>7. Configuración de Preferencias de Usuario</h2>
         
-        <h3>Colores del tema</h3>
-        <p>Blender permite cambiar la mayoría de los colores de su interfaz. Crear un nuevo tema o seleccionar uno preexistente se puede hacer abriendo las Preferencias y haciendo clic en la pestaña Temas (Themes).</p>
+        <h3>Unidades de medida</h3>
+        <p>El sistema de unidades para los controles de la interfaz se configura en el panel <strong>Properties ‣ Scene ‣ Units</strong>. Permite alternar entre el sistema <strong>Métrico</strong> (Metric) o <strong>Imperial</strong>, ajustar la escala y definir de forma independiente cómo se muestran las unidades de longitud, rotación, masa, tiempo y temperatura.</p>
 
-        <h3>Accesibilidad</h3>
-        <p>El software cuenta con varias opciones para la personalización de la visibilidad, incluyendo la escala de resolución y la capacidad de cargar fuentes personalizadas. Estas configuraciones se ajustan en la pestaña de Interfaz de las Preferencias.</p>
+        <h3>Temas de color y apariencia</h3>
+        <p>Blender permite personalizar los colores de su interfaz para reducir la fatiga visual abriendo las Preferencias y seleccionando la pestaña Temas (Themes).</p>
+
+        <hr class="my-5">
+
+        <!-- SECCIÓN DE REFERENCIAS APA -->
+        <h2 class="mb-3">Referencias</h2>
+        <ul class="list-unstyled">
+            <li class="mb-2">Blender Foundation. (2026). <em>Blender 4.x Manual</em>. Recuperado el 13 de septiembre de 2026, de https://docs.blender.org/manual/en/latest/</li>
+        </ul>
 
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
-
 
 
